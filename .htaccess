@@ -1,5 +1,6 @@
 # SPA fallback: send all non-file requests to index.html so client-side routing works.
-# Required for routes like /en, /en/tools, /en/compress, /id, etc.
+# Required when users paste or refresh deep links: /en, /en/contact, /id/about/board-of-directors, etc.
+# If the site lives in a subfolder, set RewriteBase /subfolder/
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
